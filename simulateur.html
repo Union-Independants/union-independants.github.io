@@ -8,9 +8,11 @@
               if (!results[2]) return '';
               return decodeURIComponent(results[2].replace(/\+/g, ' '));
           }
+     var moduleValue = getParameterByName('module');
+    var srcValue = getParameterByName('src')
   </script>
 <script
-data-module=getParameterByName('module')
+data-module=moduleValue
 data-couleur="#E7591C"
-src=getParameterByName('src')></script>
+src=srcValue></script>
   </body>
