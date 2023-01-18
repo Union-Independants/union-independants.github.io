@@ -8,8 +8,8 @@
               if (!results[2]) return '';
               return decodeURIComponent(results[2].replace(/\+/g, ' '));
           }
-     const moduleValue = getParameterByName('module');
-    const srcValue = getParameterByName('src');
+     let moduleValue = getParameterByName('module');
+    let srcValue = getParameterByName('src');
    console.log(moduleValue);
    console.log(srcValue);
   </script>
