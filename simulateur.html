@@ -11,10 +11,10 @@
     
     const moduleValue = getParameterByName('module');
     const srcValue = getParameterByName('src');
-  </script>
-  <script
-    data-module=moduleValue
-    data-couleur="#E7591C"
-    src=srcValue>
+    const script = document.createElement('script');
+    script.setAttribute('data-module', moduleValue);
+    script.setAttribute('data-couleur', "#E7591C");
+    script.setAttribute('src', srcValue);
+    document.body.appendChild(script);
   </script>
 </body>
