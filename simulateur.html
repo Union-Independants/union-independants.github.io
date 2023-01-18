@@ -8,13 +8,13 @@
               if (!results[2]) return '';
               return decodeURIComponent(results[2].replace(/\+/g, ' '));
           }
-     let moduleValue = getParameterByName('module');
-    let srcValue = getParameterByName('src');
+     const moduleValue = getParameterByName('module');
+    const srcValue = getParameterByName('src');
    console.log(moduleValue);
    console.log(srcValue);
   </script>
 <script
-data-module=${moduleValue}
+ data-module="${moduleValue}"
 data-couleur="#E7591C"
-src=${srcValue}></script>
+src="${srcValue}"></script>
   </body>
